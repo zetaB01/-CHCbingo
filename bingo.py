@@ -48,7 +48,7 @@ PROMPTS = [
     "Barefoot", 
     "Scooter drag racing",
     "Graffiti",
-    "Visabe Plumbers Crack",
+    "Visable Ass Crack",
     "Bald Man with long hair",
     "Wet hair sign",
     "Too young to be on a scooter",
