@@ -1,0 +1,88 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    padding: 10px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.header {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: #4caf50;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.square {
+    position: relative;
+    min-height: 120px;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+}
+
+.square-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+}
+
+.square-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 6px;
+    background: rgba(0,0,0,0.65);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+.completed {
+    border: 3px solid #4CAF50;
+}
+
+#messages {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-height: 50px;
+}
+
+#room-banner {
+    position: sticky;
+    top: 0;
+    background: #4caf50;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1000;
+}
+
+#players {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background: #f8f8f8;
+}
+
+.player {
+    padding: 5px;
+    font-weight: bold;
+}

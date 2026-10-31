@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SEMA Bingo</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css">
+</head>
+<div id="room-banner" style="display:none;">
+    Room:
+    <span id="current-room-code"></span>
+</div>
+<body>
+    <h1>SEMA Bingo</h1>
+    <input
+        id="name"
+        placeholder="Your Name">
+    <input
+        id="room"
+        placeholder="Room Code">
+    <button onclick="createGame()">
+        Create Game
+    </button>
+    <button onclick="joinGame()">
+        Join Game
+    </button>
+    <button
+        id="leave-game"
+        onclick="leaveGame()"
+        style="display:none;">
+        Leave Game
+    </button>
+
+    <button
+        id="claim-bingo"
+        onclick="claimBingo()"
+        style="display:none;">
+        Claim BINGO
+    </button>
+    <div
+        id="review-panel" style="display:none;">
+        <h2>Bingo Review</h2>
+        <div id="review-player"></div>
+        <img
+            id="review-image"
+            style="max-width:300px;">
+        <br>
+        <button onclick="approveBingo()">
+            Approve
+        </button>
+        <button onclick="denyBingo()">
+            Deny
+        </button>
+    </div>
+    <div id="gallery-screen" style="display:none;">
+        <h1 id="winner-name"></h1>
+        <button onclick="downloadMyPhotos()">
+            Download My Photos ZIP
+        </button>
+        <button id="download-photo">
+            Download Photo
+        </button>
+        <br><br>
+        <button onclick="prevPhoto()">←</button>
+        <img id="gallery-image" width="350">
+        <button onclick="nextPhoto()">→</button>
+        <p id="gallery-caption"></p>
+    </div>
+    <div id="room-info"></div>
+    <h3>Players</h3>
+    <div id="players"></div>
+    <div id="board"></div>
+    <div id="messages"></div>
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+    <script src="/static/bingo.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</body>
+
+</html>
