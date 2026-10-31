@@ -80,7 +80,7 @@ PROMPTS = [
     "Swag hat stack",
     "Standing napper",
     "Roller Skates",
-    "Rotary motor"
+    "Rotary motor",
     "Delorian with a flux capacitor",
     "Too many turbos",
     "Fuzzy Wnidow Dice"
