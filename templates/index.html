@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>SEMA Bingo</title>
 
@@ -67,6 +66,14 @@
         <img id="gallery-image" width="350">
         <button onclick="nextPhoto()">→</button>
         <p id="gallery-caption"></p>
+    </div>
+    <div id="rules-screen" style="display:none;">
+        <h2>Game Rules</h2>
+        <img src="/static/rules-card.png" id="rules-image">
+        <br><br>
+        <button class="orange-button" onclick="hideRules()">
+            Back
+        </button>
     </div>
     <div id="room-info"></div>
     <h3>Players</h3>
