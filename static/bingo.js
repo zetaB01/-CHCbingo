@@ -131,7 +131,13 @@ async function createGame() {
     document.getElementById("room-banner").style.display = "block";
     await joinGame();
 }
+function showRules() {
+    document.getElementById("rules-screen").style.display = "block";
+}
 
+function hideRules() {
+    document.getElementById("rules-screen").style.display = "none";
+}
 function drawBoard(board) {
     const boardDiv =
         document.getElementById("board");
